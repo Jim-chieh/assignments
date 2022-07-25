@@ -23,15 +23,15 @@ nav p {
 }
 
 nav ul {
-  min-width: 30%;
+ 
   display: flex;
   justify-content: space-around;
 }
 
 nav ul li {
   list-style: none;
-  margin:auto 0;
-  font-size: 18px;
+  margin:auto 20px;
+  font-size: 17px;
 }
 
 .nav-i{
@@ -96,9 +96,7 @@ padding: 10px;
     font-weight: 900;
   }
 
-  nav ul {
-    min-width: 45%;
-  }
+
 
   .Content li {
     width: 49%;
