@@ -34,7 +34,7 @@ nav ul li {
   font-size: 17px;
 }
 
-.nav-i{
+.nav-p{
   display: none;
 }
 
@@ -113,7 +113,7 @@ padding: 10px;
  .nav-ul {
   display: none;
  }
- .nav-i {
+ .nav-p {
   display: block;
   font-size: 30px;
  }
@@ -123,7 +123,7 @@ padding: 10px;
   .nav-ul {
     display: none;
    }
-   .nav-i {
+   .nav-p {
     display: block;
     font-size: 30px;
    }
