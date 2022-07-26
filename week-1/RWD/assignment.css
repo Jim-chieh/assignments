@@ -46,7 +46,7 @@ header {
   align-items: center;
 }
 
-.Title {
+.section-title {
   display: flex;
   justify-content: center;
   max-width: 1200px;
@@ -57,14 +57,14 @@ section h2 {
   margin: 30px;
 }
 
-.Content{
+.section-content{
   display: flex;
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.Content ul {
+.section-content ul {
   width: 90%;
   margin: 0 auto ;
   display: flex;
@@ -73,7 +73,7 @@ section h2 {
   justify-content: space-between;
 }
 
-.Content li {
+.section-content li {
 list-style: none;
 background-color: rgb(136, 153, 170);
 width: 49%;
@@ -83,7 +83,7 @@ font-size: 18px;
 padding: 10px;
 }
 
-.Content button {
+.section-content button {
   border: none;
   background-color: rgb(221, 238, 255);
   margin:10px auto;
@@ -98,11 +98,11 @@ padding: 10px;
 
 
 
-  .Content li {
+  .section-content li {
     width: 49%;
   }
 
-  .Content p {
+  .section-content p {
     margin-top: 10px;
     font-weight: 600;
   }
@@ -128,7 +128,7 @@ padding: 10px;
     font-size: 30px;
    }
 
-  .Content li {
+  .section-content li {
     width: 100%;
     margin: 10px auto;
   }
