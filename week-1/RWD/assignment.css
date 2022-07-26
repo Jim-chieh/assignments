@@ -118,13 +118,13 @@ section h2 {
 
 @media screen and (max-width:499px) {
   .nav-ul {
-      display: none;
-   }
+    display: none;
+  }
    
   .nav-p {
-      display: block;
-      font-size: 30px;
-    }
+    display: block;
+    font-size: 30px;
+  }
 
   .section-content li {
     width: 100%;
