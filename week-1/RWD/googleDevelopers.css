@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.header-wrapper {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 4px rgb(189, 193, 198);
+  position: fixed;
+}
+
+
+.header-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-logo {
+  width: 185px;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.header-logo img {
+  width: 185px;
+  height: 32px;
+}
+
+.header-nav {
+  width:100% ;
+}
+
+.nav-ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-ul li {
+  color: rgb(95, 99, 104);
+  margin: 0 10px;
+  font-size: 13px;
+}
+
+.nav-arrow {
+  margin-left: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-div ,
+.seach-input,
+.langue-select,
+.burger-button,
+.profile-button{
+  height: 36px;
+  margin: 10px;
+}
+
+
+.icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(241, 243, 244);
+  background-color: rgb(241, 243, 244);
+  width: 36px;
+  margin-right: -10px;
+  border-radius: 10% 0 0 10%;
+}
+
+.fa-magnifying-glass {
+  color: rgb(95, 99, 104);
+}
+
+.seach-input {
+  font-size: 16px;
+  color:rgb(95, 99, 104);
+  border: none;
+  background-color: rgb(241, 243, 244);
+  border-radius: 0 5% 5% 0;
+}
+
+.langue-select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 110px;
+  border: 1px solid rgb(218, 220, 224);
+  padding: 10px;
+}
+
+.burger-button {
+  width: 32px;
+  border-radius: 50%;
+  border: 1px solid rgb(205, 206, 211);
+  background-color: white;
+}
+
+.burger:after {
+  content: '\2807';
+  font-size: 24px;
+  margin-left:8px ;
+  color: rgb(95, 99, 104);
+  }
+
+.profile-button {
+  width: 32px;
+  border-radius: 50%;
+}
+
+.profile-button img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-top: 3px;
+}
+
+.banner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 59vh;
+  background-color: rgb(252, 173, 112);
+  
+}
+
+.banner-container {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+.banner-text {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.banner-text h2 {
+  font-size: 32px;
+  margin-top: 60px;
+}
+
+.banner-text p {
+  font-size: 16px;
+  margin: 25px 0
+}
+.banner-text button {
+  align-self: flex-start;
+  width: 118px;
+  height: 36px;
+  margin-bottom: 60px;
+  background-color: rgb(252, 173, 112);
+  border: 1px solid black;
+  font-size: 14px;
+  border-radius: 6% ;
+  font-weight: bold;
+}
+
+.banner-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 49%;
+  height: 90%;
+}
+
+.banner-img img {
+  width: 98%;
+  height: 80%;
+  border-radius: 2%;
+}
+
+.product-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.product-title {
+  margin: 0 auto;
+  font-size: 44px;
+
+}
+
+.product-list {
+  width: 94%;
+  margin: 30px auto
+}
+
+.product-ul {
+  list-style: none;
+  display: flex;
+  max-width: 1440px;
+  flex: 1 121px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.product-ul li {
+  width: 25%;
+  height: 30%;
+  text-align: center;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.product-ul img {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  margin: 32px 0 0;
+}
+
+.product-ul p {
+  margin-top: 22px;
+  font-weight: bold;
+}
+
+.product-android img {
+  width: 64px;
+  height: 36px;
+  transform: translateY(50%);
+}
+
+.product-android p {
+  margin-top: 50px;
+}
+
+.product-footer {
+  height: 52px;
+}
+
+.product-button {
+  height: 60%;
+  font-size: 14px;
+  margin: 4px 4px 4px 12px;
+  padding: 0 24px;
+  background-color: rgb(26, 115, 232);
+  border: none;
+  border-radius:5px;
+  color: white
+}
