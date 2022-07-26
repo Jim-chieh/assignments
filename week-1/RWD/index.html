@@ -14,13 +14,11 @@
 <body>
   <header class="header-wrapper">
     <div class="header-div">
-      <div class="header-logo">
-        <a>
-          <img src="img/googledeveloper.svg">
-        </a>
-      </div>
+      <a>
+        <img src="img/googledeveloper.svg">
+      </a>
       <nav class="header-nav">
-        <ul class="nav-ul">
+        <ul class="header-ul">
           <li>Products<i class="fa-solid fa-caret-down nav-arrow"></i></li>
           <li>Events</li>
           <li>Learn</li>
@@ -28,21 +26,21 @@
           <li>Developer Profile</li>
           <li>Blog</li>
         </ul>
-      </nav>
-    </div>
-    <footer>
-      <div class="footer-div">
-        <div class="icon-div">
-          <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="header-icon">
+          <div class="icon-div">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <input class="seach-input" placeholder="Search">
         </div>
-        <input class="seach-input" placeholder="Search">
-      </div>
+      </nav>
       <div class="langue-select">
         <i class="fa-solid fa-globe"></i><p>English</p><i class="fa-solid fa-caret-down"></i>
       </div>
-      <button class="burger-button"><div class="burger"></div></button>
-      <div class="profile-button"><img src="img/img.jpg"></div>
-    </footer>
+      <footer>
+        <button class="burger-button"><div class="burger"></div></button>
+        <div class="profile-button"><img src="img/img.jpg"></div>
+      </footer>
+    </div>
   </header>
   <!-- banner  -->
   <section class="banner-wrapper">
@@ -57,7 +55,7 @@
       </div>
     </div>
   </section>
-  <!-- Product -->
+  <!-- product -->
   <section class="product-wrapper">
     <header class="product-title">
       Build <strong>anything</strong> with Google
@@ -118,5 +116,28 @@
       <button class="product-button">View all developer products</button>
     </footer>
   </section>
+  <!-- aside -->
+  <aside class="aside-wrapper">
+    <div class="aside-container">
+      <div class="aside-article">
+        <img class="aside-card" src="img/card-header-grid_720.png">
+        <img class="aside-float" src="img/events-left.png">
+        <div class="aside-content">
+          <span><a>Events</a></span>
+          <p>Bringing developers together in-person and online. Stay in the know about upcoming events, catch up on content you missed, and connect with Google experts.</p>
+          <button>See events</button>
+        </div>
+      </div>
+      <div class="aside-article">
+        <img class="aside-card" src="img/card-header-grid_720.png">
+        <img class="aside-float" src="img/community-right.png">
+        <div class="aside-content">
+          <span><a>Community</a></span>
+          <p>Connect with fellow developers and startups in your area, hear from industry experts, share your skills, and learn new ones.</p>
+          <button>Find community</button>
+        </div>
+      </div>
+    </div>
+  </aside>
 </body>
 </html>
