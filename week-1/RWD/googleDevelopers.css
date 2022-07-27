@@ -111,6 +111,7 @@ footer {
   width: 110px;
   border: 1px solid rgb(218, 220, 224);
   padding: 10px;
+  cursor: pointer;
 }
 
 .burger-button {
@@ -118,6 +119,11 @@ footer {
   border-radius: 50%;
   border: 1px solid rgb(205, 206, 211);
   background-color: white;
+}
+
+.burger-button:hover {
+  cursor: pointer;
+  background-color: rgb(232, 234, 237);
 }
 
 .burger:after {
@@ -133,6 +139,10 @@ footer {
   border-radius: 50%;
   text-align: center;
   transform: translateY(5%);
+}
+
+.profile-button:hover {
+  cursor: pointer;
 }
 
 .profile-button img {
@@ -187,6 +197,12 @@ footer {
   font-size: 14px;
   border-radius: 6%;
   font-weight: bold;
+  transition: 0.2s ;
+}
+
+.banner-text button:hover {
+  cursor: pointer;
+  background-color: rgb(214, 147, 95);
 }
 
 .banner-img {
@@ -280,6 +296,12 @@ footer {
   border: none;
   border-radius: 5px;
   color: white;
+  transition: 0.2s;
+}
+
+.product-button:hover {
+  cursor: pointer;
+  background-color: rgb(23, 101, 204);
 }
 
 /* aside */
@@ -343,6 +365,12 @@ footer {
   padding: 5px 10px;
   margin: 10px 5px;
   border-radius: 4px;
+  transition: 0.2s;
+}
+
+.aside-content button:hover {
+  cursor: pointer;
+  background-color: rgb(232, 240, 254);
 }
 
 /* news */
@@ -396,10 +424,17 @@ footer {
 .news-ul button {
   align-self: flex-start;
   border: none;
+  height: 36px;
   background-color: white;
   color: rgb(26, 115, 233);
   margin: 10px 10px 10px 0;
   font-size: 14px;
+  transition: 0.2s;
+}
+
+.news-ul button:hover {
+  cursor: pointer;
+  background-color: rgb(232, 240, 254);
 }
 
 .news-ul figure {
@@ -466,6 +501,12 @@ footer {
   padding: 0 24px;
   border-radius: 5px;
   margin-top: 20px;
+  transition: 0.2s;
+}
+
+.developer-about button:hover {
+  cursor: pointer;
+  background-color: rgb(232, 240, 254);
 }
 
 .developer-info {
@@ -513,11 +554,20 @@ footer {
 }
 
 .developer-list li button {
+  height: 36px;
   border: none;
   background-color: white;
   color: rgb(26, 115, 233);
+  padding: 3px 5px;
   font-size: 14px;
   font-weight: 500;
+  transition: 0.2s;
+  border-radius: 5px;
+}
+
+.developer-list li button:hover {
+  cursor: pointer;
+  background-color: rgb(232, 240, 254);
 }
 
 /* contact */
@@ -640,8 +690,15 @@ footer {
   font-size: 14px;
   padding: 0 24px;
   border-radius: 8px;
+  transition: 0.2s;
+}
+
+.footer-subscribe button:hover {
+  cursor: pointer;
+  background-color: rgb(23, 101, 204);
 }
 
 .langue-select {
   border-radius: 5px;
+  cursor: pointer;
 }
