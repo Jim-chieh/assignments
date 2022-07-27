@@ -48,8 +48,12 @@
 
 .header-ul li {
   color: rgb(95, 99, 104);
-
   font-size: 13px;
+}
+
+.header-ul li:hover {
+  cursor: pointer;
+  color: rgb(32, 33, 36);
 }
 
 .header-icon {
