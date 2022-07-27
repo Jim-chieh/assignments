@@ -416,9 +416,10 @@ footer {
 }
 
 .news-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+ height: 100px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
 }
 
 .news-ul button {
