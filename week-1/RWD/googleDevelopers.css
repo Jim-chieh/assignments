@@ -201,7 +201,7 @@ footer {
   font-size: 14px;
   border-radius: 6%;
   font-weight: bold;
-  transition: 0.2s ;
+  transition: 0.2s;
 }
 
 .banner-text button:hover {
@@ -420,10 +420,10 @@ footer {
 }
 
 .news-icon {
- height: 100px;
- display: flex;
- flex-direction: column;
- justify-content: center;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .news-ul button {
