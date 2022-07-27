@@ -698,6 +698,19 @@ footer {
   transition: 0.2s;
 }
 
+.footer-privacy {
+  display: flex;
+  align-items: center;
+}
+
+.footer-privacy a:hover {
+  background-color: rgb(26, 137, 238);
+}
+
+.footer-privacy p {
+  margin: 0 5px;
+}
+
 .footer-subscribe button:hover {
   cursor: pointer;
   background-color: rgb(23, 101, 204);
