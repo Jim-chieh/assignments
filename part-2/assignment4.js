@@ -1,6 +1,5 @@
 function twoSum(nums, target) {
   let index = [];
-  const newNums = nums.filter((num) => num < target);
   for (let i = 0; i < newNums.length; i++) {
     for (let x = i + 1; x < newNums.length; x++) {
       if (nums[i] + nums[x] === target) {

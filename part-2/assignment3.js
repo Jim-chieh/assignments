@@ -2,7 +2,7 @@ function calculate(data) {
   let productList = data["product"]; //取出product陣列
   let priceList = []; //從product中取出price,加入新陣列
   let asnwer = 0; //設置總價格
-  
+
   for (let i = 0; i < productList.length; i++) {
     priceList.push(productList[i]["price"]);
   }
