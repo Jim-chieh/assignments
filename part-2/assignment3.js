@@ -1,19 +1,15 @@
 function calculate(data) {
-  let discount; //取出discount數值
-  let productList; //取出product陣列
+  let productList = data["product"]; //取出product陣列
   let priceList = []; //從product中取出price,加入新陣列
   let asnwer = 0; //設置總價格
-  for (let i in data) {
-    productList = data["product"];
-    discount = data["discount"];
-  }
+  
   for (let i = 0; i < productList.length; i++) {
     priceList.push(productList[i]["price"]);
   }
   priceList.forEach((price) => {
     asnwer += price;
   });
-  return (asnwer *= discount);
+  return (asnwer *= data.discount);
 }
 
 const discountedPrice = calculate({
