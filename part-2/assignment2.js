@@ -1,4 +1,4 @@
-function calc(objs) {
+function calculate(objs) {
   let answer;
   if (objs.op === "+") {
     answer = objs.num1 + objs.num2;
@@ -10,6 +10,6 @@ function calc(objs) {
   return answer;
 }
 
-console.log("Assignment2, Calc: ", calc({ num1: 2, num2: 8, op: "+" }));
-console.log("Assignment2, Calc: ", calc({ num1: 6, num2: 6, op: "-" }));
-console.log("Assignment2, Calc: ", calc({ num1: 2, num2: 8, op: "*" }));
+console.log(calculate({ num1: 2, num2: 3, op: "+" }));
+console.log(calculate({ num1: 5, num2: 2, op: "-" }));
+console.log(calculate({ num1: 1, num2: 6, op: "*" }));

@@ -8,5 +8,5 @@ function max(numbers) {
   return maximum;
 }
 
-console.log("Assiment1, Find the maximum: ", max([1, 2, 3, 4, 5]));
-console.log("Assiment1, Find the maximum: ", max([1, 2, 9, 55, 20, 78]));
+console.log(max([1, 2, 4, 5]));
+console.log(max([5, 2, 7, 1, 6]));

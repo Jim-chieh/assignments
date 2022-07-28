@@ -1,8 +1,8 @@
 function calculate(data) {
-  let productList;
-  let priceList = [];
-  let discount;
-  let asnwer = 0;
+  let discount; //取出discount數值
+  let productList; //取出product陣列
+  let priceList = []; //從product中取出price,加入新陣列
+  let asnwer = 0; //設置總價格
   for (let i in data) {
     productList = data["product"];
     discount = data["discount"];
@@ -13,7 +13,7 @@ function calculate(data) {
   priceList.forEach((price) => {
     asnwer += price;
   });
-  return (asnwer *= 1 - discount);
+  return (asnwer *= discount);
 }
 
 const discountedPrice = calculate({
@@ -25,13 +25,13 @@ const discountedPrice = calculate({
     },
     {
       name: "Product 2",
-      price: 600,
+      price: 700,
     },
     {
       name: "Product 3",
-      price: 300,
+      price: 250,
     },
   ],
 });
 
-console.log("Assignment3, Discounted Price: ", discountedPrice);
+console.log(discountedPrice);
