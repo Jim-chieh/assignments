@@ -6,11 +6,11 @@
 
 function practice_4(input) {
   // your code here
-  const valueAdd = input.reduce((accText, curText) => {
-    const key = curText.key;
-    if (accText[key] == null) accText[key] = 0;
-    accText[key] += curText.value;
-    return accText;
+  const valueAdd = input.reduce((accInput, curInput) => {
+    const key = curInput.key;
+    if (accInput[key] == null) accInput[key] = 0;
+    accInput[key] += curInput.value;
+    return accInput;
   }, {});
   return valueAdd;
 }
