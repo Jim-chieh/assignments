@@ -5,20 +5,27 @@
  */
 function practice_3(input) {
   // your code here
-  let aList = [];
-  let bList = [];
-  let cList = [];
+  const valueAdd = input.reduce((accText, curText) => {
+    const key = curText.key;
+    if (accText[key] == null) accText[key] = [];
+    accText[key].push(curText["value"]);
+    return accText;
+  }, {});
+  return valueAdd;
+  // let aList = [];
+  // let bList = [];
+  // let cList = [];
 
-  for (let i = 0; i < input.length; i++) {
-    if (input[i].key === "a") {
-      aList.push(input[i].value);
-    } else if (input[i].key === "b") {
-      bList.push(input[i].value);
-    } else if (input[i].key === "c") {
-      cList.push(input[i].value);
-    }
-  }
-  return { a: aList, b: bList, c: cList };
+  // for (let i = 0; i < input.length; i++) {
+  //   if (input[i].key === "a") {
+  //     aList.push(input[i].value);
+  //   } else if (input[i].key === "b") {
+  //     bList.push(input[i].value);
+  //   } else if (input[i].key === "c") {
+  //     cList.push(input[i].value);
+  //   }
+  // }
+  // return { a: aList, b: bList, c: cList };
 }
 
 const input3 = [

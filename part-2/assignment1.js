@@ -1,16 +1,12 @@
 function max(numbers) {
-  let maximum;
-  numbers.reduce((accNum, curNum) => {
-    if (curNum > accNum) maximum = curNum;
-    return maximum;
-  }, 0);
-  //   let maximum = numbers[0];
-  //   for (let i = 0; i < numbers.length; i++) {
-  //     if (numbers[i] > maximum) {
-  //       maximum = numbers[i];
-  //     }
-  //   }
-  //   return maximum;
+  // let maximum;
+  let maximum = numbers[0];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > maximum) {
+      maximum = numbers[i];
+    }
+  }
+  return maximum;
   return maximum;
 }
 

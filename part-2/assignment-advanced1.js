@@ -27,18 +27,13 @@
 
 function practice_1(input) {
   // your code here
-  const wordCounter = input.reduce((wordTotal, currentWord) => {
-    console.log(currentWord);
-  }, 0);
+  const total = input.reduce((accText, curText) => {
+    if (accText[curText] == null) accText[curText] = 0;
+    accText[curText] += 1;
+    return accText;
+  }, {});
+  return total;
 }
 
 const input1 = ["a", "b", "c", "a", "c", "a"];
 console.log(practice_1(input1)); // expected output: {'a':3, 'b':1, 'c':2}
-
-/* 大神解法
-  return {
-    a:input.filter(x=> x === "a").length,
-    b:input.filter(x=> x === "b").length,
-    c:input.filter(x=> x === "c").length,
-  }
-*/

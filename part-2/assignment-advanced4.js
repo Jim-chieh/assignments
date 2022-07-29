@@ -6,19 +6,13 @@
 
 function practice_4(input) {
   // your code here
-  let aValue = 0;
-  let bValue = 0;
-  let cValue = 0;
-  for (let i = 0; i < input.length; i++) {
-    if (input[i].key === "a") {
-      aValue += input[i].value;
-    } else if (input[i].key === "b") {
-      bValue += input[i].value;
-    } else if (input[i].key === "c") {
-      cValue += input[i].value;
-    }
-  }
-  return { a: aValue, b: bValue, c: cValue };
+  const valueAdd = input.reduce((accText, curText) => {
+    const key = curText.key;
+    if (accText[key] == null) accText[key] = 0;
+    accText[key] += curText.value;
+    return accText;
+  }, {});
+  return valueAdd;
 }
 
 const input4 = [
