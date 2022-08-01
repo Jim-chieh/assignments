@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
+ul {
+  width: 90%;
+  margin: 30px auto;
+  list-style: none;
+  display: flex;
+  height: 300px;
+}
+
+li {
+  width: 33%;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
