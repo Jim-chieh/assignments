@@ -18,9 +18,14 @@ ul {
 li {
   width: 33%;
   height: 100%;
+  margin: 0px 10px;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+li h2 {
+  color: red;
 }
