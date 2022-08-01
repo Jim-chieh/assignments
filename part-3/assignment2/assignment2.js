@@ -1,9 +1,7 @@
 const ul = document.querySelector("ul");
 
-function ajax(url, callback) {
-  fetch(url)
-    .then((response) => response.json())
-    .then((data) => callback(data));
+function ajax(url) {
+  return fetch(url).then((response) => response.json());
 }
 
 function render(data) {
@@ -19,12 +17,13 @@ function render(data) {
   ul.innerHTML = li;
 }
 
-ajax(
-  "https://appworks-school.github.io/Remote-Aassigiment-Data/products",
-  (data) => {
-    render(data);
-  }
+ajax("https://appworks-school.github.io/Remote-Aassigiment-Data/products").then(
+  (data) => render(data)
 );
-// ajax("https://appworks-school.github.io/Remote-Aassigiment-Data/products").then(
-//   (data) => render(data)
+
+// ajax(
+//   "https://appworks-school.github.io/Remote-Aassigiment-Data/products",
+//   (data) => {
+//     render(data);
+//   }
 // );
