@@ -7,7 +7,6 @@ function max(numbers) {
     }
   }
   return maximum;
-  return maximum;
 }
 
 console.log(max([1, 2, 4, 5]));
