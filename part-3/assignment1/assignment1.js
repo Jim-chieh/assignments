@@ -2,9 +2,9 @@
 const header = document.querySelector("header");
 const h1 = document.querySelectorAll("h1");
 //操控menu
-const p = document.querySelector(".nav-p");
-const div = document.querySelector("body div");
-const exit = document.querySelector(".menu-exit");
+const menuBtn = document.querySelector(".nav-p");
+const menu = document.querySelector("body div");
+const exitBtn = document.querySelector(".menu-exit");
 //增加/隱藏contentBox
 const showMore = document.querySelector(".section-content button");
 const content = document.querySelector("#content-ul");
@@ -17,12 +17,12 @@ function toggleControler() {
 
 header.addEventListener("click", toggleControler);
 
-p.addEventListener("click", () => {
-  div.className = "menu";
+menuBtn.addEventListener("click", () => {
+  menu.className = "menu";
 });
 
-exit.addEventListener("click", () => {
-  div.removeAttribute("class");
+exitBtn.addEventListener("click", () => {
+  menu.removeAttribute("class");
 });
 
 showMore.addEventListener("click", () => {
