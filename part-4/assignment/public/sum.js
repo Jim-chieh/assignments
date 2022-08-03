@@ -5,7 +5,7 @@ submitButton.addEventListener("click", fetchData);
 function fetchData() {
   let value = input.value;
   fetch("http://localhost:3000/getData/?number=" + value)
-    .then((response) => response.json())
+    .then((response) => response.text())
     .then((data) => (content.textContent = `Total number is :${data}`));
   input.value = "";
 }
