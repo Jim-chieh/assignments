@@ -1,9 +1,10 @@
-const e = require("express");
 const express = require("express");
 const app = express();
 
+app.use("/sum.html", express.static("public"));
+
 app.get("/", (req, res) => {
-  res.send("<h1>Hello,My Server!</h1>");
+  res.send("<h1>Hello,My Server!<h1>");
 });
 
 app.get("/getData", (req, res) => {
@@ -30,7 +31,3 @@ app.get("/getData", (req, res) => {
 app.listen(3000, () => {
   console.log("The application is running!");
 });
-
-setTimeout(() => {
-  exit(0);
-}, 90000);
