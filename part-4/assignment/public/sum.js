@@ -5,7 +5,7 @@ submitButton.addEventListener("click", fetchData);
 function fetchData() {
   let value = input.value;
   let url;
-  if (value == "") {
+  if (value.trim() == "") {
     url = `http://localhost:3000/getData`;
   } else {
     url = `http://localhost:3000/getData/?number=`;
