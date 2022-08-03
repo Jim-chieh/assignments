@@ -6,5 +6,9 @@ app.get("/", (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log("The applocation is running!");
+  console.log("The application is running!");
 });
+
+setTimeout(() => {
+  exit(0);
+}, 30000);
