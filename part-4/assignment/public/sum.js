@@ -1,4 +1,4 @@
-const input = document.querySelector("input"); //拿輸入的數值
+const input = document.querySelector("input");
 const submitButton = document.querySelector(".submit");
 const content = document.querySelector("p");
 submitButton.addEventListener("click", fetchData);

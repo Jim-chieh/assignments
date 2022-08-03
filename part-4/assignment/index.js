@@ -25,7 +25,6 @@ app.get("/getData", (req, res) => {
     counter(transferNum);
     res.send(`${total}`);
   }
-  // console.log(number););
 });
 
 app.listen(3000, () => {
