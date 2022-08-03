@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
 
 app.get("/getData", (req, res) => {
   const { number } = req.query;
-  if (number == "") {
+  if (number == null) {
     res.send("Lack of Parameter");
   } else if (isNaN(number)) {
     res.send("Wrong Parameter");
