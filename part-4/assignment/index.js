@@ -10,9 +10,9 @@ app.get("/", (req, res) => {
 app.get("/getData", (req, res) => {
   const { number } = req.query;
   if (number == null) {
-    res.send("Lack of Parameter");
+    res.send("<h1>Lack of Parameter</h1>");
   } else if (isNaN(number)) {
-    res.send("Wrong Parameter");
+    res.send("<h1>Wrong Parameter</h1>");
   } else {
     const transferNum = parseInt(number);
     let total = 0;
