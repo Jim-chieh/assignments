@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 
+//https://expressjs.com/en/starter/static-files.html
 app.use("/sum.html", express.static("public"));
 
 app.get("/", (req, res) => {
@@ -9,6 +10,7 @@ app.get("/", (req, res) => {
 
 app.get("/getData", (req, res) => {
   const { number } = req.query;
+  console.log(number);
   if (number == null) {
     res.send("Lack of Parameter");
   } else if (isNaN(number)) {
