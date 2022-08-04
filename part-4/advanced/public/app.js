@@ -28,12 +28,7 @@ function deletedData() {
       'Content-Type': 'application/json'
     },
     method: 'POST',
-    body: JSON.stringify({
-      title: 'foo',
-      body: 'bar',
-      userId: 1,
-      name: 'delete'
-    })
+    body: JSON.stringify({ name: 'delete' })
   })
     .then((response) => response.text())
     .then((data) => (content.innerHTML = data))
