@@ -1,13 +1,4 @@
 const { useState } = React;
-function App() {
-	return (
-		<>
-			<Nav />
-			<Header />
-			<Section />
-		</>
-	);
-}
 
 function Nav() {
 	const [menuId, setMenuId] = React.useState('');
@@ -92,6 +83,16 @@ function Section() {
 					<li>Content Box 8</li>
 				</ul>
 			</section>
+		</>
+	);
+}
+
+function App() {
+	return (
+		<>
+			<Nav />
+			<Header />
+			<Section />
 		</>
 	);
 }
