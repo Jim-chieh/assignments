@@ -1,65 +1,76 @@
+const { useState } = React;
 function App() {
 	return (
 		<>
 			<Nav />
 			<Header />
 			<Section />
-			<Menu />
 		</>
 	);
 }
 
 function Nav() {
-	const openMenu = () => {
-		const menu = document.querySelector('.menu');
-		menu.setAttribute('id', 'menu');
-		console.log('add id');
+	const [menuId, setMenuId] = React.useState('');
+	const controlMenu = () => {
+		if (menuId === '') {
+			setMenuId('menu');
+		} else {
+			setMenuId('');
+		}
 	};
 	return (
-		<nav>
-			<p>Website Title/Logo</p>
-			<p
-				className="nav-p"
-				onClick={() => {
-					openMenu();
-				}}
-			>
-				<i className="fa-solid fa-bars"></i>
-			</p>
-			<ul className="nav-ul">
-				<li>Item1</li>
-				<li>Item2</li>
-				<li>Item3</li>
-				<li>Item4</li>
-			</ul>
-		</nav>
+		<>
+			<nav>
+				<p>Website Title/Logo</p>
+				<p className="nav-p" onClick={controlMenu}>
+					<i className="fa-solid fa-bars"></i>
+				</p>
+				<ul className="nav-ul">
+					<li>Item1</li>
+					<li>Item2</li>
+					<li>Item3</li>
+					<li>Item4</li>
+				</ul>
+			</nav>
+			<div className="menu" id={menuId}>
+				<ul className="menu-ul">
+					<li>Item1</li>
+					<li>Item2</li>
+					<li>Item3</li>
+					<li>Item4</li>
+				</ul>
+				<p className="menu-exit" onClick={controlMenu}>
+					X
+				</p>
+			</div>
+		</>
 	);
 }
 
 function Header() {
-	function toggleControler() {
-		const h1 = document.querySelectorAll('h1');
-		for (let i = 0; i < h1.length; i++) {
-			h1[i].classList.toggle('header-toggle');
+	const [message, setMessage] = React.useState('Welcome Message');
+	const toggleControler = () => {
+		if (message === 'Welcome Message') {
+			setMessage('Have a Good Time');
+		} else {
+			setMessage('Welcome Message');
 		}
-	}
-
+	};
 	return (
-		<header
-			onClick={() => {
-				toggleControler();
-			}}
-		>
-			<h1>Welcome Message</h1>
-			<h1 className="header-toggle">Have a Good time!</h1>
+		<header onClick={toggleControler}>
+			<h1>{message}</h1>
 		</header>
 	);
 }
 
 function Section() {
+	const [className, setClassName] = React.useState('content-ul');
 	const showMore = () => {
-		const Content = document.querySelector('#content-ul');
-		Content.classList.toggle('content-ul');
+		if (className === '') {
+			setClassName('content-ul');
+		} else {
+			setClassName('');
+		}
 	};
 	return (
 		<>
@@ -73,8 +84,8 @@ function Section() {
 					<li>Content Box 3</li>
 					<li>Content Box 4</li>
 				</ul>
-				<button onClick={() => showMore()}>Call to action</button>
-				<ul className="content-ul" id="content-ul">
+				<button onClick={showMore}>Call to action</button>
+				<ul className={className}>
 					<li>Content Box 5</li>
 					<li>Content Box 6</li>
 					<li>Content Box 7</li>
@@ -82,26 +93,6 @@ function Section() {
 				</ul>
 			</section>
 		</>
-	);
-}
-
-function Menu() {
-	const closeMenu = () => {
-		const menu = document.querySelector('#menu');
-		menu.removeAttribute('id');
-	};
-	return (
-		<div className="menu">
-			<ul className="menu-ul">
-				<li>Item1</li>
-				<li>Item2</li>
-				<li>Item3</li>
-				<li>Item4</li>
-			</ul>
-			<p className="menu-exit" onClick={() => closeMenu()}>
-				X
-			</p>
-		</div>
 	);
 }
 
