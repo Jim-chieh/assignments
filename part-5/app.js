@@ -79,7 +79,7 @@ function Section() {
 			</section>
 			<section className="section-content">
 				<ul>
-					<li>Content Box 1</li>
+					<li>Content Box 7</li>
 					<li>Content Box 2</li>
 					<li>Content Box 3</li>
 					<li>Content Box 4</li>
